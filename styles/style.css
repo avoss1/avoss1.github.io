@@ -18,72 +18,114 @@ ul {
     overflow: hidden;
     background-color: #333;
     width: 100%;
-  }
+}
   
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: Helvetica, Arial, sans-serif;
-  }
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+}
   
   /* Change the link color to #111 (black) on hover */
-  li a:hover, .dropdown:hover {
-    background-color: #111;
-  }
+li a:hover, .dropdown:hover {
+  background-color: #111;
+}
 
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #333;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
 
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+.dropdown:hover .dropdown-content {
+  display: block;
+}
   
-  .active {
-    background-color: #04AA6D;
-  }
+.active {
+  background-color: #04AA6D;
+}
 
-  .spacer {
-    padding-top: 10px;
-  }
+.spacer {
+  padding-top: 10px;
+}
 
-  #tent-photo {
-    width: 50%;
-    border-radius: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    float: left;
-  }
+#tent-photo {
+  width: 50%;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  float: left;
+}
 
-  footer {
-    text-align: center;
-    padding: 3px;
-    background-color: grey;
-    color: white;
-    margin-top: auto;
-    width: 100%;
-  }
-  footer a{
-    font-family: Helvetica, Arial, sans-serif;
-    text-decoration: none;
-  }
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: grey;
+  color: white;
+  margin-top: auto;
+  width: 100%;
+}
 
-  p {
-    font-family: Helvetica, Arial, sans-serif;
-  }
+footer a{
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
 
-  #main-text {
-    color: black;
-  }
+p {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#main-text {
+  color: black;
+}
+
+form {
+  margin:10px auto;
+  max-width:308px;
+  text-align:center;
+}
+input, textarea {
+float:none;
+margin:5px auto;
+padding:4px;
+width:100%;
+max-width:300px;
+border:none;
+border-radius:2px;
+font-size:18px;
+color:black;
+background-color:white;
+}
+input:focus {
+outline:none;
+}
+#userName, #userEmail, #userMessage {
+-webkit-box-shadow:inset 0px 0px 4px #0A0A0A;
+-moz-box-shadow:inset 0px 0px 4px #0A0A0A;
+-o-box-shadow:inset 0px 0px 4px #0A0A0A;
+box-shadow:inset 0px 0px 4px #0A0A0A;
+}
+#formSubmit {
+max-width:308px;
+font-family:HelveticaNeue-CondensedBold, HelveticaNeue-Thin, Helvetica, Arial;
+-webkit-box-shadow:0px 5px 10px #0A0A0A;
+-moz-box-shadow:0px 5px 10px #0A0A0A;
+-o-box-shadow:0px 5px 10px #0A0A0A;
+box-shadow:0px 5px 10px #0A0A0A;
+}
+#formSubmit:hover {
+-webkit-box-shadow:inset 0px 0px 5px #0A0A0A;
+-moz-box-shadow:inset 0px 0px 5px #0A0A0A;
+-o-box-shadow:inset 0px 0px 5px #0A0A0A;
+box-shadow:inset 0px 0px 5px #0A0A0A;
+}

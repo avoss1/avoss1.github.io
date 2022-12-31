@@ -1,24 +1,32 @@
-$("#contactForm").submit(function(e) {
-	e.preventDefault();
-	$.ajax({
-	    url: "https://formspree.io/f/xlekerzp", 
-	    method: "POST",
-	    data: {name: $("#userName").val(), _replyto: $("#userEmail").val(), message: $("#userMessage").val()},
-	    dataType: "json"
+var form = document.getElementById("contactForm")
+
+async function handleSubmit(event) {
+	alert('you submitted')
+	event.preventDefault();
+	var data = new FormData(event.target);
+	fetch(event.target.action, {
+		method: form.method,
+		body: data,
+		headers: {
+			'Accept': 'application/json'
+		}
+	}).then(response => {
+		if (response.ok){
+			alert("Contact form submitted");
+			form.reset()
+		} else {
+			response.json().then(data => {
+				if (Object.hasOwn(data, 'errors')) {
+					alert(data["errors"].map(error => error["message"]).join(", "))
+				} else {
+					alert('An error occurred')
+				}
+			})
+		}
+	}).catch(error => {
+		alert('There was an issue')
 	});
 
-	setTimeout(function() {
-		clearForm();
-	}, 1000);
-});
-
-function clearForm() {
-	var elems = document.getElementsByTagName("input");
-	var l = elems.length - 1;
-	for (var i = 0; i < l; ++i) {
-		elems[i].value = "";
-	}
-	$("textarea").val("");
-
-	alert("Contact request sent.");
 }
+
+form.addEventListener("submit", handleSubmit)
