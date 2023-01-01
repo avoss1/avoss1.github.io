@@ -216,7 +216,7 @@ div.element img {
 
 div.pageGrid {
   display: grid;
-  grid-template-columns: 10% 40% 40% 10%;
+  grid-template-columns: 10% 20% 20% 20% 20% 10%;
 }
 
 h2.title {
@@ -225,13 +225,40 @@ h2.title {
   margin-bottom: 10px;
 }
 
-p.desc {
+p.descL {
   grid-column-start: 2;
+  grid-column-end: 4;
   margin-top: 0;
   margin-right: 10px;
+  height: min-content;
 }
 
-img.pageImage {
+p.descR {
+  grid-column-start: 4;
+  grid-column-end: 6;
+}
+
+img.pageImageR {
+  border-radius: 10px;
+  grid-column-start: 4;
+  grid-column-end: 6;
+  width: 75%;
+  justify-self: center;
+}
+br {
+  display: block;
+  margin: 10px;
+  content: " ";
+}
+
+img.pageImageL1 {
+  margin-top: 10px;
+  border-radius: 10px;
+  grid-column-start: 2;
+  width: 75%;
+}
+
+img.pageImageL2 {
   border-radius: 10px;
   grid-column-start: 3;
   width: 100%;
