@@ -290,3 +290,10 @@ figcaption {
 .viedoFigR2 {
   grid-column-start: 5;
 }
+
+.centerText {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  width: 75%;
+  justify-self: center;
+}
