@@ -213,3 +213,26 @@ div.element img {
 .projectCoverImage {
   border-radius: 10px;
 }
+
+div.pageGrid {
+  display: grid;
+  grid-template-columns: 10% 40% 40% 10%;
+}
+
+h2.title {
+  grid-column-start: 2;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+p.desc {
+  grid-column-start: 2;
+  margin-top: 0;
+  margin-right: 10px;
+}
+
+img.pageImage {
+  border-radius: 10px;
+  grid-column-start: 3;
+  width: 100%;
+}
