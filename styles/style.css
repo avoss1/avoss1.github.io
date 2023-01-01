@@ -263,3 +263,11 @@ img.pageImageL2 {
   grid-column-start: 3;
   width: 100%;
 }
+
+video {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
