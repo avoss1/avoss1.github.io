@@ -239,7 +239,7 @@ p.descR {
   margin-top: 20px;
 }
 
-img.pageImageR {
+.pageImageR {
   border-radius: 10px;
   grid-column-start: 4;
   grid-column-end: 6;
@@ -277,4 +277,16 @@ video {
 #wide {
   grid-column-start: 3;
   grid-column-end: 5;
+}
+
+figcaption {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.viedoFigR1 {
+  grid-column-start: 4;
+}
+
+.viedoFigR2 {
+  grid-column-start: 5;
 }

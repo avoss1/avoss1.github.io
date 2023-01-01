@@ -33,7 +33,7 @@
             </video>
             <p class="descR">After creating an improved sketch, we each chose one to CAD and present to our sponsor from iRobot. I decided to model a scissor lift. (Because we decided it would require very tight tolerances to be as extendable as it need to be, it was an obvious no moving forward.)
             To the left is an animation of the scissor lift mechanism that would move the platform holding the camera and an arm up and down.</p>
-            <p class="descL">We settled on a fixed-height platform as our final design. We compared that design against our other solutions which involved movement and determined minimizing moving parts would ease the building process, a necessity given our accelerated timeline. This would also improve structural stability (at the cost of displacing the center of gravity much higher while moving compared to a movable design.) Another upside of this approach was that fixed length legs would be easy to manufacture with sustainably sourced bamboo. This final design is illustrated in the image to the right.</p>
+            <p class="descL" style="align-self: center;">We settled on a fixed-height platform as our final design. We compared that design against our other solutions which involved movement and determined minimizing moving parts would ease the building process, a necessity given our accelerated timeline. This would also improve structural stability (at the cost of displacing the center of gravity much higher while moving compared to a movable design.) Another upside of this approach was that fixed length legs would be easy to manufacture with sustainably sourced bamboo. This final design is illustrated in the image to the right.</p>
             <img src="../media/Screenshot 2021-12-24 003927.png" alt="" class="pageImageR" id="cad">
             <img src="../media/32ab08_817197e4ab3e42b2bb78c13ef85f0945_mv2.webp.png" alt="" class="pageImageL1">
             <p class="descR" id="wide">Of course, nothing goes exactly as planned. (And wow, one learns to expect unexpected delays that slow progress significantly). We quickly realized that our CAD model lacked lateral stability. We fixed this by adding an additional leg to make the platform on Raba more like it was sitting on a tripod.<br>
@@ -42,6 +42,18 @@
             <p class="descL">I took the lead on integrating the electromechanical systems, to create an opportunity for myself to learn how to use microcontrollers (in this case a Raspberry Pi). Raba needed to be controlled remotely while streaming video footage back to the client/user controlling Raba.<br>
                 I created a Flask webserver that  would serve a user a simple HTML based user interface with buttons to move the robot forward, backward, left, and right in addition to moving the arm up and down. The buttons would send calls back to the server running on the Raspberry Pi telling it to tell either the Create how to move or the motors to spin in forward or reverse. The beauty of using a Pi was that implementing a webstream only required importing a library and setting up a camera that was referenced in an HTML image element.<br>
             <br>The problem with a default Flask server is that every time a user sends a GET request (i.e. presses a button or clicks a link), the entire page refreshes. This is obviously an issue because it would both make the robot totally uncontrollable and the webstream would refresh every time a user tried to move Raba, further increasing the difficulty of controlling it. The solution to this was to implement AJAX (Asynchronous Javascript And XML) which allowed, as the name suggests, data to be asynchronously transmitted between the user and Pi. This prevents the page from being refreshed while the user is controlling Raba. Because I had very little experience prior to this project setting up servers, implementation of AJAX required substantial research (thank you W3 schools and Stack Exchange) and even more substantial trial and error of small, iterative improvements.<br></p>
+            <div class="videoFigR1">
+                <figure style="margin: 0;">
+                    <video src="../media/26 - Firstdrive.MOV" controls></video>
+                </figure>
+                <figcaption>First time controlling the Create with the Raspberry Pi!</figcaption>
+            </div>
+            <div class="videoFigR2">
+                <figure style="margin: 0; margin-left: 10px;">
+                    <video src="../media/31 - IMG_6328.MOV" controls style="width: 100%;"></video>
+                </figure>
+                <figcaption>Testing the code controlling the arm (and verifying the webstream worked) and the motors/light flipper</figcaption>
+            </div>
         </div>
             <footer>
             <p>©Andrew Voss 2022</p>
