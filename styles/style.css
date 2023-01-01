@@ -33,6 +33,15 @@ li a {
   text-decoration: none;
   font-family: Helvetica, Arial, sans-serif;
 }
+
+li p {
+  text-align: center;
+  float: right;
+  display: block;
+  font-family: Helvetica, Arial, sans-serif;
+  color: white;
+  padding-right: 10px;
+}
   
   /* Change the link color to #111 (black) on hover */
 li a:hover, .dropdown:hover {
@@ -296,4 +305,21 @@ figcaption {
   grid-column-end: 5;
   width: 75%;
   justify-self: center;
+}
+
+#teamphoto {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  justify-self: center;
+}
+
+#demophoto {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  justify-self: center;
+}
+
+#teamphoto img, #demophoto img {
+  width: 100%;
+  border-radius: 10px;
 }
