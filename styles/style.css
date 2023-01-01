@@ -230,7 +230,6 @@ p.descL {
   grid-column-end: 4;
   margin-top: 0;
   margin-right: 10px;
-  height: min-content;
 }
 
 p.descR {
@@ -273,4 +272,9 @@ video {
   width: 100%;
   margin-bottom: 10px;
   border-radius: 10px;
+}
+
+#wide {
+  grid-column-start: 3;
+  grid-column-end: 5;
 }
