@@ -34,7 +34,7 @@ li a {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-li p {
+li > p {
   text-align: center;
   float: right;
   display: block;
