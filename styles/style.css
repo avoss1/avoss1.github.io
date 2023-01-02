@@ -70,7 +70,8 @@ li a:hover, .dropdown:hover {
 
 footer {
   text-align: center;
-  padding: 3px;
+  padding-top: 3px;
+  padding-bottom: 15px;
   background-color: grey;
   color: white;
   margin-top: auto;
