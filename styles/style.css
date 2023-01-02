@@ -307,19 +307,19 @@ figcaption {
   justify-self: center;
 }
 
-#teamphoto {
+.teamphoto {
   grid-column-start: 2;
   grid-column-end: 4;
   justify-self: center;
 }
 
-#demophoto {
+.demophoto {
   grid-column-start: 4;
   grid-column-end: 6;
   justify-self: center;
 }
 
-#teamphoto img, #demophoto img {
+.teamphoto img, .demophoto img {
   width: 100%;
   border-radius: 10px;
 }
